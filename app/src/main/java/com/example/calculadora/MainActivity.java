@@ -20,6 +20,24 @@ public class MainActivity extends AppCompatActivity {
         txtViewResultado.setText("0");
     }
 
+    //negativo
+
+    public void btnNegativo (View v) {
+        valor1 = Double.parseDouble(txtViewResultado.getText().toString());
+        valor1 = -valor1;
+        txtViewResultado.setText(valor1.toString());
+    }
+
+    //ponto
+
+    public void btnPonto (View v) {
+        if(txtViewResultado.getText().toString().contains(".")) {
+            txtViewResultado.setText(txtViewResultado.getText());
+        } else {
+            txtViewResultado.setText(txtViewResultado.getText() + ".");
+        }
+    }
+
     // operações
 
     public void btnSomar(View v) {

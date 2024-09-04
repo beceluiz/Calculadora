@@ -28,16 +28,28 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnLimpatr"
+        android:id="@+id/btnDividir"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="92dp"
+        android:onClick="btnDividir"
+        android:text="/"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btnApagar"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewResutltado" />
+
+    <Button
+        android:id="@+id/btnQuatro"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="92dp"
-        android:onClick="limpar"
-        android:text="C"
+        android:layout_marginTop="8dp"
+        android:onClick="btnQuatro"
+        android:text="4"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtViewResutltado" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSete" />
 
     <Button
         android:id="@+id/btnPorcentagem"
@@ -51,6 +63,90 @@
         app:layout_constraintTop_toBottomOf="@+id/txtViewResutltado" />
 
     <Button
+        android:id="@+id/btnSomar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:onClick="btnSomar"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btnTres"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubtrair" />
+
+    <Button
+        android:id="@+id/btnMultiplicar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:onClick="btnMultiplicar"
+        android:text="X"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btnNove"
+        app:layout_constraintTop_toBottomOf="@+id/btnDividir" />
+
+    <Button
+        android:id="@+id/btnTres"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="btnTres"
+        android:text="3"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btnDois"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeis" />
+
+    <Button
+        android:id="@+id/btnOito"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="btnOito"
+        android:text="8"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btnSete"
+        app:layout_constraintTop_toBottomOf="@+id/btnPorcentagem" />
+
+    <Button
+        android:id="@+id/btnSeis"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="btnSeis"
+        android:text="6"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btnCinco"
+        app:layout_constraintTop_toBottomOf="@+id/btnNove" />
+
+    <Button
+        android:id="@+id/btnVirgula"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="btnPonto"
+        android:text="."
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btnZero"
+        app:layout_constraintTop_toBottomOf="@+id/btnTres" />
+
+    <Button
+        android:id="@+id/btnCinco"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="btnCinco"
+        android:text="5"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btnQuatro"
+        app:layout_constraintTop_toBottomOf="@+id/btnOito" />
+
+    <Button
         android:id="@+id/btnApagar"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -59,18 +155,6 @@
         android:text="s"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/btnPorcentagem"
-        app:layout_constraintTop_toBottomOf="@+id/txtViewResutltado" />
-
-    <Button
-        android:id="@+id/btnDividir"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="92dp"
-        android:onClick="btnDividir"
-        android:text="/"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/btnApagar"
         app:layout_constraintTop_toBottomOf="@+id/txtViewResutltado" />
 
     <Button
@@ -86,88 +170,40 @@
         app:layout_constraintTop_toBottomOf="@+id/btnLimpatr" />
 
     <Button
-        android:id="@+id/btnOito"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:onClick="btnOito"
-        android:text="8"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/btnSete"
-        app:layout_constraintTop_toBottomOf="@+id/btnPorcentagem" />
-
-    <Button
-        android:id="@+id/btnNove"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:onClick="btnNove"
-        android:text="9"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/btnOito"
-        app:layout_constraintTop_toBottomOf="@+id/btnApagar" />
-
-    <Button
-        android:id="@+id/btnMultiplicar"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:onClick="btnMultiplicar"
-        android:text="X"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/btnNove"
-        app:layout_constraintTop_toBottomOf="@+id/btnDividir" />
-
-    <Button
-        android:id="@+id/btnQuatro"
+        android:id="@+id/btnNegativo"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
-        android:onClick="btnQuatro"
-        android:text="4"
+        android:onClick="btnNegativo"
+        android:text="+/="
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSete" />
+        app:layout_constraintTop_toBottomOf="@+id/btnUm" />
 
     <Button
-        android:id="@+id/btnCinco"
+        android:id="@+id/btnZero"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:onClick="btnCinco"
-        android:text="5"
+        android:onClick="btnZero"
+        android:text="0"
         android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/btnQuatro"
-        app:layout_constraintTop_toBottomOf="@+id/btnOito" />
+        app:layout_constraintStart_toEndOf="@+id/btnNegativo"
+        app:layout_constraintTop_toBottomOf="@+id/btnDois" />
 
     <Button
-        android:id="@+id/btnSeis"
+        android:id="@+id/btnCalcular"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginLeft="12dp"
         android:layout_marginTop="8dp"
-        android:onClick="btnSeis"
-        android:text="6"
+        android:onClick="calcular"
+        android:text="="
         android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/btnCinco"
-        app:layout_constraintTop_toBottomOf="@+id/btnNove" />
-
-    <Button
-        android:id="@+id/btnSubtrair"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:onClick="btnSubtrair"
-        android:text="-"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/btnSeis"
-        app:layout_constraintTop_toBottomOf="@+id/btnMultiplicar" />
+        app:layout_constraintStart_toEndOf="@+id/btnVirgula"
+        app:layout_constraintTop_toBottomOf="@+id/btnSomar" />
 
     <Button
         android:id="@+id/btnUm"
@@ -194,72 +230,39 @@
         app:layout_constraintTop_toBottomOf="@+id/btnCinco" />
 
     <Button
-        android:id="@+id/btnTres"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:onClick="btnTres"
-        android:text="3"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/btnDois"
-        app:layout_constraintTop_toBottomOf="@+id/btnSeis" />
-
-    <Button
-        android:id="@+id/btnSomar"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:onClick="btnSomar"
-        android:text="+"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/btnTres"
-        app:layout_constraintTop_toBottomOf="@+id/btnSubtrair" />
-
-    <Button
-        android:id="@+id/btnNegativo"
+        android:id="@+id/btnLimpatr"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
-        android:text="+/="
+        android:layout_marginTop="92dp"
+        android:onClick="limpar"
+        android:text="C"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnUm" />
+        app:layout_constraintTop_toBottomOf="@+id/txtViewResutltado" />
 
     <Button
-        android:id="@+id/btnZero"
+        android:id="@+id/btnNove"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:onClick="btnZero"
-        android:text="0"
+        android:onClick="btnNove"
+        android:text="9"
         android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/btnNegativo"
-        app:layout_constraintTop_toBottomOf="@+id/btnDois" />
+        app:layout_constraintStart_toEndOf="@+id/btnOito"
+        app:layout_constraintTop_toBottomOf="@+id/btnApagar" />
 
     <Button
-        android:id="@+id/btnVirgula"
+        android:id="@+id/btnSubtrair"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginLeft="12dp"
         android:layout_marginTop="8dp"
-        android:text=","
+        android:onClick="btnSubtrair"
+        android:text="-"
         android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/btnZero"
-        app:layout_constraintTop_toBottomOf="@+id/btnTres" />
+        app:layout_constraintStart_toEndOf="@+id/btnSeis"
+        app:layout_constraintTop_toBottomOf="@+id/btnMultiplicar" />
 
-    <Button
-        android:id="@+id/btnCalcular"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:onClick="calcular"
-        android:text="="
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/btnVirgula"
-        app:layout_constraintTop_toBottomOf="@+id/btnSomar" />
 </android.support.constraint.ConstraintLayout>
